@@ -1,0 +1,57 @@
+/* reset css*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    /*front trữ*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ctrl d
+alt shift phải*/
+/*
+1.từ trên xuống dưới
+2. từ phải vào trong
+3. từ tổng quan trến cho tiết
+*/
+/*
+1.vị trí
+2.kích thước
+3.màu sắc
+4.kiểu dáng(kiểu trữ,hình dáng)
+*/
+#main{
+
+}
+#header{
+    height: 46px; /*chiều cao*/
+    background-color: black; /*màu sắc*/
+}
+#nav li {
+    display: inline-block; /*trữ nằm ngang*/
+}
+#nav li a{
+    color: #fff; /*màu trữ*/
+    text-decoration: none; /*bỏ gạch chân */
+    line-height: 46px; /*trữ căn giữa trên dưới*/
+    padding: 0 24px; /*trữ cách nhau trái phải*/
+    display: inline-block; /*hover vào màu nền rộng hơn*/
+}
+#nav li:hover a{
+    /*khi hover(di vào, chạm vào)*/
+    color: black; /*màu trữ*/
+    background-color: #ccc; /*nền trữ*/
+}
+#nav .subnav{
+    display: none;
+}
+#slider{
+
+}
+#content{
+
+}
+#foote{
+
+}
