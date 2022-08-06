@@ -27,6 +27,13 @@ alt shift phải*/
 #header{
     height: 46px; /*chiều cao*/
     background-color: black; /*màu sắc*/
+    position: fixed; /*cố định header trên đầu*/
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#nav {
+    display: inline-block; /*đẩy thanh search lên header*/
 }
 #nav, .subnav{
     list-style-type: none; /*xóa dấu chấm đầu trữ*/
@@ -78,9 +85,24 @@ alt shift phải*/
 #nav .nav-arrow{
     font: size 12px;
 }
+#header .search-btn{
+    float:right; /*đẩy thanh search sang phải*/
+    padding: 0 16px; /*cách lề phải 16px*/
+}
+#header .search-btn:hover{ /*khi hover vào thì nổi màu*/
+    background-color: #f44336;
+    cursor: pointer; /*đổi hình trỏ chuổi khi di vào*/
+}
+#header .search-icon{
+    color: #fff;    /*màu thanh search*/
+    font-size: 20px;  /*kích thước thanh search*/
+    line-height: 46px; /*căn giữa*/
+}
 #slider{
-    min-height: 500px;
-    background-color: #ccc;
+    margin-top: 46px; /*đẩy slider xuống dưới header*/
+    padding-top: 50%; /*giữ tỷ lệ ảnh*/
+    background: url('/assets/img/chicago.jpg') /*link ảnh*/ top center / cover no-repeat ;
+    
 
 }
 #content{
