@@ -28,25 +28,59 @@ alt shift phải*/
     height: 46px; /*chiều cao*/
     background-color: black; /*màu sắc*/
 }
+#nav, .subnav{
+    list-style-type: none; /*xóa dấu chấm đầu trữ*/
+}
+#nav > li {
+    display: inline-block;
+}
 #nav li {
-    display: inline-block; /*trữ nằm ngang*/
+   /* display: inline-block; /*trữ nằm ngang*/
+    position: relative;
+}
+#nav > li > a{
+    color:#fff;
+    text-transform: uppercase;/*trữ viết hoa*/
 }
 #nav li a{
-    color: #fff; /*màu trữ*/
+   /* color: #fff; /*màu trữ*/
     text-decoration: none; /*bỏ gạch chân */
     line-height: 46px; /*trữ căn giữa trên dưới*/
     padding: 0 24px; /*trữ cách nhau trái phải*/
     display: inline-block; /*hover vào màu nền rộng hơn*/
 }
-#nav li:hover a{
+#nav li:hover .subnav{ /*di vào để hiển thị*/
+    display: block;
+}
+#nav > li:hover > a{
     /*khi hover(di vào, chạm vào)*/
     color: black; /*màu trữ*/
     background-color: #ccc; /*nền trữ*/
 }
 #nav .subnav{
-    display: none;
+   display: none; 
+   position: absolute; /*nằm dọc*/
+   top:100%; /*chiều cao*/
+   left: 0;
+   min-width: 160px; /*chiều ngang*/
+   background-color: #fff; /*nền trữ*/
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /*bóng đổ*/
+}
+#nav .subnav a{
+    color: black; /*màu trữ*/
+    padding: 0 12px;
+    line-height: 38px;
+}
+#nav .subnav li:hover { /*khi di vào phần sub nav*/
+    color: black;
+    background-color: #ccc;
+}
+#nav .nav-arrow{
+    font: size 12px;
 }
 #slider{
+    min-height: 500px;
+    background-color: #ccc;
 
 }
 #content{
