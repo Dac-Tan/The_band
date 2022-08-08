@@ -31,6 +31,7 @@ alt shift phải*/
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 #nav {
     display: inline-block; /*đẩy thanh search lên header*/
@@ -99,14 +100,58 @@ alt shift phải*/
     line-height: 46px; /*căn giữa*/
 }
 #slider{
+    position: relative;
     margin-top: 46px; /*đẩy slider xuống dưới header*/
     padding-top: 50%; /*giữ tỷ lệ ảnh*/
-    background: url('/assets/img/chicago.jpg') /*link ảnh*/ top center / cover no-repeat ;
-    
+    background: url('/assets/img/chicago.jpg'); /*link ảnh*/ 
+    background-position: top center; 
+    background-size: cover; /*size ảnh*/
+    background-repeat: no-repeat; 
 
+}
+#slider .text-content{
+    position: absolute; /*hiển thị trữ ở giữa*/
+    bottom: 47px; /*chiều cao trữ*/
+    color: #fff; /*màu trữ*/
+    left: 50%; /*căn giữa*/
+    transform: translateX(-50%); /*căn giữa trữ nhỏ*/
+    text-align: center; /*căn giữa trữ to*/
+}
+#slider .text-heading{
+    font-weight: 500; /*độ dày trữ*/
+    font-size: 24px;
+}
+#slider .text-description{
+    font-size: 15px; /*cỡ trữ*/
+    margin-top: 25px; /*khoảng cách 2 dòng*/
 }
 #content{
 
+}
+#content .content-section{
+    width: 800px;
+    padding: 64px 0; /*cách trên dưới*/
+    margin-right: auto; /*cách trái phải*/
+    margin-left: auto;
+}
+#content .section-heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px; /*khoảng cách trữ*/
+}
+#content .section-sub-heading{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic; /*trữ nghiêng*/
+    opacity: 0.6; /* độ mờ trữ*/
+}
+#content .about-text{
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify; /*căn đều trữ hai bên*/
+    line-height: 1.6;
 }
 #foote{
 
