@@ -21,6 +21,9 @@ alt shift phải*/
 3.màu sắc
 4.kiểu dáng(kiểu trữ,hình dáng)
 */
+.clear{
+    clear: both;
+}
 #main{
 
 }
@@ -151,7 +154,23 @@ alt shift phải*/
     margin-top: 25px;
     font-size: 15px;
     text-align: justify; /*căn đều trữ hai bên*/
-    line-height: 1.6;
+    line-height: 1.6; /*độ dãn dòng*/
+}
+#content .member-list{
+    margin-top: 48px; /*tạo khoảng cách phía trên*/
+    text-align: center; /*căn giữa ảnh và màn hình*/
+}
+#content .member-item{
+    float: left; /*cho 3 ảnh nằm ngang*/
+    width: 33.33333%; /*chia khoảng cách 3 ảnh*/
+}
+#content .member-name{
+    font-size: 15px; /*sz trữ*/
+}
+#content .member-img{
+    margin-top: 15px; /*khoảng cách ảnh và trữ*/
+    width: 154px;
+    border-radius: 4px; /*bo tròn góc ảnh*/
 }
 #foote{
 
