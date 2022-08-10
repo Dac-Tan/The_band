@@ -204,6 +204,7 @@ alt shift phải*/
     border-radius: 50%; /*nền tròn*/
     text-align: center; /*trữ căn giữa trên dưới*/
     line-height: 24px;  /*trữ căn giữa trái phải*/
+    margin-top: -2px; /*đẩy cả cụm lên*/
 }
 #foote{
 
