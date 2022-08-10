@@ -24,6 +24,9 @@ alt shift phải*/
 .clear{
     clear: both;
 }
+.text-white{
+    color: #fff !important; /*trữ màu trắng*/
+}
 #main{
 
 }
@@ -171,6 +174,36 @@ alt shift phải*/
     margin-top: 15px; /*khoảng cách ảnh và trữ*/
     width: 154px;
     border-radius: 4px; /*bo tròn góc ảnh*/
+}
+.tour-section{
+    background-color: #000; /*nền đen*/
+}
+.ticket-list{
+    background-color: #fff; /*màu khung*/
+    margin-top: 40px; /*khoảng cách phía trên*/
+}
+.ticket-list li{
+    list-style-type: none; /*xóa dầu chấm ở trữ*/
+    color: #757575; /*màu trữ*/
+    font-size: 15px; /*cớ trữ*/
+    padding: 11px 16px; /*khoảng cách trên dưới trái phải trữ*/
+    border-bottom: 1px solid #ddd; /*viền dưới trữ*/
+}
+.ticket-list .sold-out{
+    background-color: #f44336; /*màu bền*/
+    color: #fff; /*màu trữ*/
+    padding: 3px 4px; /*khoảng cách nền vs trữ*/
+    margin-left: 16px; /*dịch sang trái*/
+}
+.ticket-list .quantiti{
+    float:right; /*trữ sáng phải*/
+    width: 24px; /*chiều cao trữ*/
+    height: 24px;
+    background-color: #000; /*màu nền*/
+    color:#fff;  /*màu trữ*/
+    border-radius: 50%; /*nền tròn*/
+    text-align: center; /*trữ căn giữa trên dưới*/
+    line-height: 24px;  /*trữ căn giữa trái phải*/
 }
 #foote{
 
