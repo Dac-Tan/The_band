@@ -206,6 +206,55 @@ alt shift phải*/
     line-height: 24px;  /*trữ căn giữa trái phải*/
     margin-top: -2px; /*đẩy cả cụm lên*/
 }
+/*place */
+.places-list{
+    margin-top: 32px; /*khoảng cách top*/
+    margin-left: -8px; /*khoảng cách trái phải*/
+    margin-right: -8px;
+    padding-bottom: 48px; /*tăng viền dưới*/
+}   
+.place-item{
+    float: left; /*ảnh hàng ngang*/
+    width: 33.33333%; /*3 ảnh trên 1 hàng*/
+    padding: 0 8px; /*tạo khoảng cách */
+}
+.place-img{
+    width: 100%; /*cho ảnh nhỏ lại*/
+    display: block; /*bỏ khoảng cách ở ảnh*/
+}
+.place-img:hover{
+    opacity: 0.6; /*hover vào ảnh mờ nhẹ*/
+}
+.place-body{
+    padding: 16px; /*khoảng cách viền*/
+    font-size: 15px;
+    background-color: #fff; /*màu nền*/
+}
+.place-heading{
+    font-size: 15px; /*cớ trữ và độ dày*/
+    font-weight: 600;
+}
+.place-time{
+    margin-top: 15px; /*tạo khoảng cách trữ*/
+    color: #757575;
+}
+.place-desc{
+    margin-top: 15px; /*khoảng cách trữ*/
+    line-height: 1.4; /*dãn dòng*/
+}
+.place-buy-btn{
+    text-decoration: none; /*bỏ gạch chân*/
+    color: #fff; /*màu trữ*/
+    background-color: #000; /*màu nền*/
+    padding: 11px 16px; /*tăng độ dày viền */
+    display: inline-block; /*lùi xuống*/
+    margin-top: 15px; /*top xuống*/
+}
+.place-buy-btn:hover{ /*khi hover*/
+    color: #000;
+    background-color: #ccc;
+}
+
 #foote{
 
 }
