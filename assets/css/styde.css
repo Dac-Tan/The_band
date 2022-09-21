@@ -160,7 +160,7 @@ alt shift phải*/
     position: relative;
     margin-top: 46px; /*đẩy slider xuống dưới header*/
     padding-top: 50%; /*giữ tỷ lệ ảnh*/
-    background: url('/assets/img/chicago.jpg'); /*link ảnh*/ 
+    background: url(/assets/img/chicago.jpg); /*link ảnh*/ 
     background-position: top center; 
     background-size: cover; /*size ảnh*/
     background-repeat: no-repeat; 
