@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 html{
+    scroll-behavior: smooth; /*hiệu ứng cuộn*/
     /*front trữ*/
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -21,12 +22,62 @@ alt shift phải*/
 3.màu sắc
 4.kiểu dáng(kiểu trữ,hình dáng)
 */
+/*common*/
+
 .clear{
     clear: both;
 }
 .text-white{
     color: #fff !important; /*trữ màu trắng*/
 }
+.mt8{
+    margin-top: 8px !important;
+}
+.mt16{
+    margin-top: 16px !important;
+}
+.pull-right{
+    float: right !important;
+}
+.row{
+    margin-left: -8px;
+    margin-top: -8px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-full{
+    width: 100%;
+}
+.col-half{
+    width: 50%;
+}
+.col-third{
+    width: 33.33333%;
+}
+.btn{
+    text-decoration: none; /*bỏ gạch chân*/
+    color: #fff; /*màu trữ*/
+    background-color: #000; /*màu nền*/
+    padding: 11px 16px; /*tăng độ dày viền */
+    display: inline-block; /*lùi xuống*/
+    margin-top: 15px; /*top xuống*/
+    border: none;
+}
+.btn:hover{ /*khi hover*/
+    cursor: pointer; /*hình ngón tay*/
+    color: #000;
+    background-color: #ccc;
+}
+
+/*main*/
 #main{
 
 }
@@ -132,11 +183,10 @@ alt shift phải*/
     margin-top: 25px; /*khoảng cách 2 dòng*/
 }
 #content{
-
 }
 #content .content-section{
     width: 800px;
-    padding: 64px 0; /*cách trên dưới*/
+    padding: 64px 0 112px; /*cách trên dưới*/
     margin-right: auto; /*cách trái phải*/
     margin-left: auto;
 }
@@ -208,16 +258,9 @@ alt shift phải*/
 }
 /*place */
 .places-list{
-    margin-top: 32px; /*khoảng cách top*/
-    margin-left: -8px; /*khoảng cách trái phải*/
-    margin-right: -8px;
-    padding-bottom: 48px; /*tăng viền dưới*/
+    margin-top: 32px;
 }   
-.place-item{
-    float: left; /*ảnh hàng ngang*/
-    width: 33.33333%; /*3 ảnh trên 1 hàng*/
-    padding: 0 8px; /*tạo khoảng cách */
-}
+
 .place-img{
     width: 100%; /*cho ảnh nhỏ lại*/
     display: block; /*bỏ khoảng cách ở ảnh*/
@@ -242,19 +285,50 @@ alt shift phải*/
     margin-top: 15px; /*khoảng cách trữ*/
     line-height: 1.4; /*dãn dòng*/
 }
-.place-buy-btn{
-    text-decoration: none; /*bỏ gạch chân*/
-    color: #fff; /*màu trữ*/
-    background-color: #000; /*màu nền*/
-    padding: 11px 16px; /*tăng độ dày viền */
-    display: inline-block; /*lùi xuống*/
-    margin-top: 15px; /*top xuống*/
-}
-.place-buy-btn:hover{ /*khi hover*/
-    color: #000;
-    background-color: #ccc;
-}
 
-#foote{
-
+/*contact form*/
+.contact-content{
+    margin-top: 48px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.contact-form{
+    font-size: 15px;
+}
+.contact-form .form-control{
+    padding: 10px;
+    bottom: 1px solid #ccc;
+    width: 100%;
+}
+/*maps section*/
+.map-section img{
+    width: 100%;
+}
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+#footer .socials{
+    font-size: 30px;
+}
+#footer .socials a{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+#footer .copyright a:hover,
+#footer .socials a:hover{
+    color: rgba(0, 0, 0, 0.3);
+}
+#footer .copyright{
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
 }
