@@ -36,6 +36,9 @@ alt shift phải*/
 .mt16{
     margin-top: 16px !important;
 }
+.mt32{
+    margin-top: 32px !important;
+}
 .pull-right{
     float: right !important;
 }
@@ -70,6 +73,7 @@ alt shift phải*/
     display: inline-block; /*lùi xuống*/
     margin-top: 15px; /*top xuống*/
     border: none;
+    text-align: center;
 }
 .btn:hover{ /*khi hover*/
     cursor: pointer; /*hình ngón tay*/
@@ -89,6 +93,7 @@ alt shift phải*/
     left: 0;
     right: 0;
     z-index: 1;
+   
 }
 #nav {
     display: inline-block; /*đẩy thanh search lên header*/
@@ -143,14 +148,29 @@ alt shift phải*/
 #nav .nav-arrow{
     font: size 12px;
 }
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#header .mobile-menu-btn,
 #header .search-btn{
     float:right; /*đẩy thanh search sang phải*/
-    padding: 0 16px; /*cách lề phải 16px*/
+    padding: 0 21px; /*cách lề phải 21px*/
 }
+#header .mobile-menu-btn:hover
 #header .search-btn:hover{ /*khi hover vào thì nổi màu*/
     background-color: #f44336;
     cursor: pointer; /*đổi hình trỏ chuổi khi di vào*/
 }
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+}
+#header .menu-icon,
 #header .search-icon{
     color: #fff;    /*màu thanh search*/
     font-size: 20px;  /*kích thước thanh search*/
@@ -160,7 +180,7 @@ alt shift phải*/
     position: relative;
     margin-top: 46px; /*đẩy slider xuống dưới header*/
     padding-top: 50%; /*giữ tỷ lệ ảnh*/
-    background: url('/assets/img/chicago.jpg'); /*link ảnh*/ 
+    background: url('../img/chicago.jpg'); /*link ảnh*/ 
     background-position: top center; 
     background-size: cover; /*size ảnh*/
     background-repeat: no-repeat; 
@@ -181,14 +201,18 @@ alt shift phải*/
 #slider .text-description{
     font-size: 15px; /*cỡ trữ*/
     margin-top: 25px; /*khoảng cách 2 dòng*/
+    text-shadow: 0 0 01px #000;
 }
 #content{
 }
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px; /*cách trên dưới*/
     margin-right: auto; /*cách trái phải*/
     margin-left: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 #content .section-heading{
     text-align: center;
@@ -210,7 +234,7 @@ alt shift phải*/
     line-height: 1.6; /*độ dãn dòng*/
 }
 #content .member-list{
-    margin-top: 48px; /*tạo khoảng cách phía trên*/
+    margin-top: 32px; /*tạo khoảng cách phía trên*/
     text-align: center; /*căn giữa ảnh và màn hình*/
 }
 #content .member-item{
@@ -258,7 +282,7 @@ alt shift phải*/
 }
 /*place */
 .places-list{
-    margin-top: 32px;
+    margin-top: 16px;
 }   
 
 .place-img{

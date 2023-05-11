@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The band DacTan</title>
     <link rel="stylesheet" href="assets/css/styde.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
     <link rel="stylesheet" href="assets/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -19,7 +21,7 @@
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="nav-arrow ti-angle-down"></i>
                     </a>
@@ -37,6 +39,9 @@
             <!-- begin: search-->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
             <!-- end: search-->
         </div>
@@ -64,15 +69,15 @@
                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <div class="row member-list">
-                    <div class="member-item">
+                    <div class="col col-third s-col-full mt32 text-center">
                         <p class="menber-name">Tan</p>
                         <img src="assets/img/bandmember.jpg" alt="Name" class="member-img">
                     </div>
-                    <div class="member-item">
+                    <div class="col col-third s-col-full mt32 text-center">
                         <p class="menber-name">Dai</p>
                         <img src="assets/img/bandmember.jpg" alt="Name" class="member-img">
                     </div>
-                    <div class="member-item">
+                    <div class="col col-third s-col-full mt32 text-center">
                         <p class="menber-name">Phat</p>
                         <img src="assets/img/bandmember.jpg" alt="Name" class="member-img">
                     </div>
@@ -93,31 +98,31 @@
                     <!--end-->
                     <!--place-->
                     <div class="row places-list">
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt16">
                             <img src="assets/img/place/place1.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="btn">Buy Tickets</a>
+                                <a href="#" class="btn s-full-width">Buy Tickets</a>
                             </div>
                         </div>
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt16">
                             <img src="assets/img/place/place2.jpg" alt="Paris" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="btn">Buy Tickets</a>
+                                <a href="#" class="btn s-full-width">Buy Tickets</a>
                             </div>
                         </div>
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt16">
                             <img src="assets/img/place/place3.jpg" alt="San Francisco" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Sun 28 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="btn">Buy Tickets</a>
+                                <a href="#" class="btn s-full-width">Buy Tickets</a>
                             </div>
                         </div> 
                         <div class="clear"></div>
@@ -131,18 +136,18 @@
                 <p class="section-sub-heading">Fan? Drop a note!</p>
 
                 <div class="row contact-content contact-info">
-                    <div class="col col-half">   
+                    <div class="col col-half s-col-full contact-form">   
                         <p><i class="ti-location-pin"></i>Thiet Binh-Ha Noi,VN</p>
                         <p><i class="ti-mobile"></i>Phone:03273284xx</p>
                         <p><i class="ti-email"></i>Email:nguyendactantb@gmail.com</p>
                     </div>
-                    <div class="col col-half contact-form">
+                    <div class="col col-half s-col-full contact-form">
                         <form action="">
                             <div class="row">
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full">
                                     <input type="text" name="" placeholder="name" required id="" class="form-control">
                                 </div>
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full s-mt-8">
                                     <input type="email" name="" placeholder="email" required id="" class="form-control">
                                 </div>
                             </div>
@@ -151,7 +156,7 @@
                                     <input type="text" name="" placeholder="message" required id="" class="form-control">
                                 </div>
                             </div>
-                            <input class="btn pull-right mt16" type="submit" value="SEND">
+                            <input class="btn pull-right mt16 s-full-width" type="submit" value="SEND">
                         </form>
                     </div>
                 </div>
@@ -174,5 +179,32 @@
             <p class="copyright">powered by <a href="">DacTan.scc</a></p>
         </div>
     </div>
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+        // đóng mở menu
+        mobileMenu.onclick = function (){
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed){
+                header.style.height = 'auto';
+            }else{
+                header.style.height = null;
+            }
+        }
+        //đóng mở khi chọn
+        var menuIeams = document.querySelectorAll('#nav li a[href*="#"]')
+        for (var i = 0; i < menuIeams.length; i++){
+            var menuIeam = menuIeams[i];
+            menuIeam.onclick = function(event){            
+                var isParentMenu = this.nextElementSibling && menuIeam.nextElementSibling.classList.contains('subnav');
+                if(isParentMenu){
+                    event.preventDefault();
+                }else{
+                    header.style.height = null;                   
+                }          
+            }
+        }
+    </script>
 </body>
 </html>
